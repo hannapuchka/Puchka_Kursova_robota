@@ -1,0 +1,228 @@
+﻿@page "/Instruments"
+@model WebApp.Pages.Instruments.InstrumentsModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruments</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Instruments.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="header">
+        <div class="top_hamburger">
+            <a asp-page="../Mainpage/Mainpage"><img class="nav_hamburger_logo" src="~/src/logo.png"></a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div id="bar" class="top_menu">
+            <a asp-page="../Mainpage/Mainpage" class="top_menu_logo_link"><img class="nav_bar_logo" src="~/src/logo.png"></a>
+            <div class="dropdown_menu">
+                <ul class="nav_bar_text">
+                    <li><a asp-page="../Mainpage/Mainpage" class="nav_link">Головна</a></li>
+                    <li><a asp-page="../Webdesign/Webdesign" class="nav_link">Про web-дизайн</a></li>
+                    <li><a asp-page="../Principles/Principles" class="nav_link">Принципи та правила</a></li>
+                    <li><a asp-page="../Instruments/Instruments" class="nav_link">Інструменти та ресурси</a> </li>
+                    <li><a asp-page="../Trends/Trends" class="nav_link">Тренди web-дизайну</a></li>
+                    <li><a asp-page="../AboutUs/AboutUs" class="nav_link">Про нас</a></li>
+                    <li><a asp-page="../Profile/Profile" class="nav_link">Мій профіль</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container ">
+        <div class="title_with_text">
+            <div class="title">
+                <p class="text main_title_text main_title_text_first">
+                    Інструменти
+                </p>
+                <p class="text main_title_text main_title_text_second style_3">
+                    та ресурси
+                </p>
+            </div>
+            <div class="text_under_title">
+                <p class="text_regular">
+                    Програми, прототипи, стоки та бібліотеки – це ключові інструменти в області веб-дизайну, кожен з яких виконує свої специфічні функції.<br><br>
+
+                    Програми: Програми для веб-дизайну є спеціалізованими програмами, які використовуються дизайнерами для створення та редагування графічних елементів, макетів та
+                    інтерфейсів веб-сайтів та додатків. Ці програми надають широкий спектр інструментів для роботи із зображеннями, текстом, квітами та іншими дизайнерськими елементами. <br><br>
+
+                    Прототипи: Прототипи у веб-дизайні - це інтерактивні моделі або макети, які створюються для демонстрації функціональності та візуального вигляду майбутнього веб-сайту
+                    або програми. Вони дозволяють дизайнерам та розробникам перевірити концепцію та взаємодію користувачів з інтерфейсом. <br><br>
+
+                    Стоки: Стокові ресурси є колекціями зображень, відео, звуків та інших медіафайлів, які можуть бути використані у веб-дизайні.
+                    Дизайнери купують ліцензії на стокові ресурси, щоби впровадити їх у свої проекти. Стокові зображення та елементи використовуються для створення
+                    візуального контенту, який відповідає тематиці та стилю проекту.<br><br>
+
+                    Бібліотеки: Бібліотеки та фреймворки є готовими компонентами, кодом або структурами, які прискорюють процес розробки веб-сайтів і додатків.
+                    Вони надають дизайнерам та розробникам готові рішення для створення інтерфейсів, включаючи готові CSS-стилі, JavaScript-компоненти та макети.
+                </p>
+            </div>
+        </div>
+        <p class="main_photo"><img class="photo1" src="~/src/Instruments/img_p4.png"></p>
+
+        <div class="main_text">
+            <div class="subtitle">
+                <p class="text_subtitle">Основні інструменти у веб-дизайні:</p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">1. Adobe XD</p>
+                <p class="text_regular">
+                    Adobe XD - це високофункціональне програмне забезпечення, розроблене Adobe Systems, призначене для проектування та прототипування інтерфейсів
+                    веб-сайтів та мобільних програм. <br><br>
+
+                    Цей інструмент надає широкий набір функцій та можливостей, які роблять процес дизайну та створення інтерактивних прототипів більш ефективним та зручним.
+                </p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">2. Figma</p>
+                <p class="text_regular">
+                    Figma - це веб-додаток для дизайнерів, який став одним з найбільш популярних інструментів у галузі дизайну інтерфейсів та спільної роботи.
+                    Воно надає широкий спектр функціональних можливостей та особливостей, роблячи процес дизайну гнучкішим та ефективнішим.
+                </p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">3. InVision Studio</p>
+                <p class="text_regular">
+                    InVision Studio - це потужний інструмент для дизайнерів, який спеціалізується на створенні інтерактивних прототипів і взаємодій
+                    у інтерфейсах. Цей інструмент надає дизайнерам можливість більш детально опрацьовувати та тестувати досвід користувача перед фактичною
+                    реалізацією веб-сайтів та мобільних додатків
+                </p>
+            </div>
+        </div>
+        <div class="main_text">
+            <div class="subtitle">
+                <p class="text_subtitle">Редактори зображень:</p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2 subtitle2">1. Adobe Photoshop</p>
+                <p class="text_regular">
+                    Adobe Photoshop - це стандартний та високоцінний інструмент для редагування та створення графіки, який широко використовується
+                    професіоналами в галузі дизайну, фотографії та мистецтва. Цей програмний пакет, розроблений компанією Adobe, надає багатий набір
+                    функцій та інструментів для обробки та маніпулювання зображеннями та текстом.
+                </p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">2. GIMP (GNU Image Manipulation Program)</p>
+                <p class="text_regular">
+                    GIMP (GNU Image Manipulation Program) - це безкоштовний і відкритий редактор зображень,
+                    доступний для різних операційних систем, включаючи Windows, MacOS і різні дистрибутиви Linux.
+                    GIMP надає безліч функцій і можливостей, які можна порівняти з Adobe Photoshop, і є відмінним вибором для дизайнерів,
+                    фотографів та художників з обмеженим бюджетом або тими, хто воліє використовувати програмне забезпечення з відкритим вихідним кодом.
+                </p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">3. Affinity Designer</p>
+                <p class="text_regular">
+                    Affinity Designer - це векторний графічний редактор, доступний для операційних систем macOS і Windows.
+                    Цей редактор надає високофункціональні можливості та функціональність, що можна порівняти з Adobe Illustrator.
+                    Affinity Designer широко використовується для створення векторних зображень, ілюстрацій, логотипів та інших графічних елементів,
+                    особливо у сфері веб-дизайну.
+                </p>
+            </div>
+        </div>
+        <div class="main_text">
+            <div class="subtitle">
+                <p class="text_subtitle">Найпопулярніші ресурси для натхнення</p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2 subtitle2">1. Behance.net</p>
+                <p class="text_regular">
+                    Behance - це найбільша у світі онлайн-спільнота, в якій користувачі діляться своїми роботами. На сайті представлені
+                    різні роботи, включаючи роботи графічних дизайнерів, ілюстраторів, типографів, дизайнерів UX, веб-дизайнерів, фотографів і т.д.
+                </p>
+                <img class="photo2" src="~/src/Instruments/img_p4_2.png">
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">2. AWWWARDS</p>
+                <p class="text_regular">
+                    Даний ресурс дає нагороди для найкращих з найкращих сайтів за веб-дизайн та розробку. Це місце, де творчі професіонали з
+                    усього світу приходять, щоб знайти натхнення, поділитися знаннями та отримати конструктивну критику.
+                </p>
+                <img class="photo2" src="~/src/Instruments/img_p4_3.png">
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">3. Dribbble</p>
+                <p class="text_regular">
+                    Dribbble - спільнота дизайнерів, де вони демонструють свої роботи та отримує натхнення один від одного.
+                    Дизайнери використовують Dribbble для демонстрації своєї творчості і є хорошим джерелом натхнення.
+                </p>
+                <img class="photo2" src="~/src/Instruments/img_p4_4.png">
+            </div>
+        </div>
+        <div class="main_buttons">
+            <div class="main_button1 button_color_style5">
+                <a asp-page="../Principles/Principles" class="text_button">принципи та правила</a>
+            </div>
+            <div class="main_button2 button_color_style2">
+                <a asp-page="../Trends/Trends" class="text_button">тренди web-дизайну</a>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".top_menu");
+        const headMenu = document.querySelector(".header");
+        const navLink = document.querySelectorAll(".nav_link");
+
+        hamburger.addEventListener("click", mobileMenu);
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            headMenu.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            headMenu.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+        hamburger.addEventListener("click", toTopFunction);
+        function toTopFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            var pageWidth = document.documentElement.scrollWidth;
+            if (pageWidth > 1040) {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            else {
+                mybutton.style.display = "none";
+            }
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-200px";
+                closeMenu();
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+</html>

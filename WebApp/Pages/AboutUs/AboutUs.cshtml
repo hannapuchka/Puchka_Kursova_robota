@@ -1,0 +1,199 @@
+﻿@page "/AboutUs"
+@model WebApp.Pages.AboutUs.AboutUsModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/AboutUs.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="top_hamburger">
+            <a asp-page="../Mainpage/Mainpage"><img class="nav_hamburger_logo" src="~/src/logo.png"></a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div id="bar" class="top_menu">
+            <a asp-page="../Mainpage/Mainpage" class="top_menu_logo_link"><img class="nav_bar_logo" src="~/src/logo.png"></a>
+            <div class="dropdown_menu">
+                <ul class="nav_bar_text">
+                    <li><a asp-page="../Mainpage/Mainpage" class="nav_link">Головна</a></li>
+                    <li><a asp-page="../Webdesign/Webdesign" class="nav_link">Про web-дизайн</a></li>
+                    <li><a asp-page="../Principles/Principles" class="nav_link">Принципи та правила</a></li>
+                    <li><a asp-page="../Instruments/Instruments" class="nav_link">Інструменти та ресурси</a> </li>
+                    <li><a asp-page="../Trends/Trends" class="nav_link">Тренди web-дизайну</a></li>
+                    <li><a asp-page="../AboutUs/AboutUs" class="nav_link">Про нас</a></li>
+                    <li><a asp-page="../Profile/Profile" class="nav_link">Мій профіль</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="title_with_text">
+            <div class="title">
+                <p class="text main_title_text main_title_text_first">
+                    Про нас
+                </p>
+            </div>
+            <div class="text_under_title">
+                <p class="text_regular">
+                    Ми - кафедра «Медіасистем і технологій» Харківського національного університету радіоелектроніки. Понад 20 років наша кафедра веде
+                    підготовку фахівців для видавничо-поліграфічної галузі та IT-сфери нашої країни.<br><br>
+
+                    Відповідно до Постанови КМ України №266 від 29 квітня 2015 року «Про затвердження Переліку галузь знань и спеціальностей,
+                    за якими здійснюється підготовка здобувачів вищої освіти» з 2016 роки ми ведемо підготовку бакалаврів і магістрів за спеціальністю 186
+                    «Видавництво та поліграфія» освітні програми: «Технології електронних мультимедійних видань», «Комп'ютерні технології та системи видавничо-поліграфічних виробництв»,
+                    «Технології друкованих видань».<br><br>
+
+                    Кафедра розпочала свою діяльність у 1944 році як кафедра накреслювальної геометрії та креслення, пізніше інженерної графіки,
+                    інженерної та комп'ютерної графіки і зараз називається кафедра «Медіасистеми та технології».<br><br>
+
+                    З 1997 р. кафедра веде підготовку спеціалістів за напрямом «Видавничо-поліграфічна справа» та стала профільною кафедрою університету,
+                    яка веде підготовку спеціалістів для видавничо-поліграфічної галузі та IT-сфери нашої країни.<br><br>
+
+                    З 2016 року кафедра готує бакалаврів спеціальності 186 «Видавництво та поліграфія»; магістрів з цієї ж спеціальності за освітніми програмами:
+                    «Технології електронних мультимедійних видань», «Комп'ютерні технології та системи видавничо-поліграфічних виробництв».
+                </p>
+            </div>
+        </div>
+
+        <p class="main_photo"><img class="photo1" src="~/src/AboutUs/img_p6.png"></p>
+
+        <div class="main_text">
+            <div class="subtitle">
+                <p class="text_subtitle">Спеціальність 186 - Освітня програма<br>Видавнично-поліграфічна справа</p>
+            </div>
+            <div class="block_text">
+                <p class="text_regular">
+                    Підготовку за цією спеціальністю ми ведемо в тісній співпраці з провідними університетами України: НТУУ «КПІ ім. Сікорського»,
+                    Українською академією друкарства, а також з провідними європейськими університетами: Штутгартським медіауніверсітетом (Німеччина),
+                    Варшавською політехнікою (Польща), з 2017 року підписано договір про подвійне дипломування з отриманням нашими студентами
+                    Європейського диплома університету економіки (м. Бидгощ, Польща) за спеціалізацією «Інформаційні технології в медіаіндустрії»
+                    та з 2019 року підписана угода з Каунаським університетом прикладних наук.<br><br>
+
+                    Викладачі нашої кафедри не тільки допомагають отримати професійні знання з цієї спеціальності, а й викладають загальноосвітні
+                    дисципліни «Механіка», «Інженерна та комп'ютерна графіка» для студентів усіх спеціальностей університету.<br><br>
+
+                    В останні роки ми приділяємо увагу підготовці фахівців не тільки в галузі традиційних друкарських технологій, але і в
+                    області технологій розробки електронних, мультимедійних видань та інформаційних продуктів (реклама та ін.), WEB-систем
+                    (включаючи проектування UI/UX), мобільних додатків з можливостями анімації та ін.
+                </p>
+            </div>
+        </div>
+        <div class="block_links_with_subtitle">
+            <div class="main_text">
+                <div class="subtitle">
+                    <p class="text_subtitle">Наші контакти:</p>
+                </div>
+                <div class="social_links">
+                    <a href="https://www.youtube.com/channel/UCD14ouWOkIN4FFQgZtS7j9w">
+                        <div class="link_row">
+                            <img class="icon_link" src="~/src/AboutUs/youtube.svg">
+                            <p class="text_regular">Youtube</p>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/mst.nure.ua">
+                        <div class="link_row">
+                            <img class="icon_link" src="~/src/AboutUs/facebook.svg">
+                            <p class="text_regular">Facebook</p>
+                        </div>
+                    </a>
+                    <a href="https://instagram.com/mst_nure_ua">
+                        <div class="link_row">
+                            <img class="icon_link" src="~/src/AboutUs/inst.svg">
+                            <p class="text_regular">Instagram</p>
+                        </div>
+                    </a>
+                    <a href="http://mst.nure.ua">
+                        <div class="link_row">
+                            <img class="icon_link" src="~/src/AboutUs/web.svg">
+                            <p class="text_regular">Web-site</p>
+                        </div>
+                    </a>
+                    <a href="https://t.me/mst_nure">
+                        <div class="link_row">
+                            <img class="icon_link" src="~/src/AboutUs/telegram.svg">
+                            <p class="text_regular">Telegram</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main_buttons">
+            <div class="main_button1 button_color_style5">
+                <a asp-page="../Trends/Trends" class="text_button">тренди web-дизайну</a>
+            </div>
+            <div class="main_button2 button_color_style2">
+                <a asp-page="../Profile/Profile" class="text_button">мій профіль</a>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".top_menu");
+        const headMenu = document.querySelector(".header");
+        const navLink = document.querySelectorAll(".nav_link");
+
+        hamburger.addEventListener("click", mobileMenu);
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            headMenu.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            headMenu.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+        hamburger.addEventListener("click", toTopFunction);
+        function toTopFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            var pageWidth = document.documentElement.scrollWidth;
+            if (pageWidth > 1040) {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            else {
+                mybutton.style.display = "none";
+            }
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-200px";
+                closeMenu();
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+</html>

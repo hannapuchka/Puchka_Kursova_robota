@@ -1,0 +1,258 @@
+﻿*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* MAIN PAGE*/
+
+.container {
+    margin-top: 79px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 100px;
+}
+
+.title_with_text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main_photo {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+
+.photo1 {
+    width: 636px;
+}
+
+.photo2 {
+    padding-top: 30px;
+    width: 860px;
+}
+
+.main_text {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding-right: 19%;
+    padding-bottom: 30px;
+}
+
+.block_text {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding-bottom: 30px;
+}
+
+.text_subtitle {
+    padding-bottom: 5px;
+}
+
+.main_buttons {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+}
+
+.main_button1 {
+    display: inline-flex;
+    height: 94px;
+    width: 485px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_button2 {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    height: 94px;
+    width: 270px;
+}
+
+.text_button {
+    color: var(--text_color, #333);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.social_links {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 26px 94px;
+    padding-bottom: 120px;
+}
+
+.icon_link {
+    width: 74px;
+}
+
+.link_row {
+    display: flex;
+    flex-direction: row;
+    gap: 26px 26px;
+    align-items: center;
+}
+
+.block_links_with_subtitle {
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .photo2 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1744px) and (min-width: 1041px) {
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        align-self: center;
+    }
+
+    .container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title_with_buttons {
+        align-items: center;
+    }
+
+    .social_links {
+        flex-direction: column;
+        justify-content: left;
+    }
+}
+
+@media (max-width: 1040px) {
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        align-self: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title_with_buttons {
+        align-items: center;
+    }
+
+    .main_text {
+        flex: auto;
+    }
+
+    .main_photo {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .photo1 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .social_links {
+        flex-direction: column;
+        justify-content: left;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second_links {
+        margin-top: 20px;
+    }
+
+    .youtube_link {
+        width: 60px;
+    }
+
+    .facebook_link, .instagram_link, .telegram_link, .web_link {
+        width: 60px;
+        margin-left: 35px;
+    }
+
+    .text {
+        align-self: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title_with_buttons {
+        align-items: center;
+    }
+
+    .main_photo {
+        padding-top: 0%;
+        padding-left: 0%;
+        justify-content: center;
+        width: 80%;
+        height: 80%;
+    }
+
+    .photo1 {
+        width: 100%;
+    }
+
+    .photo2 {
+        width: 100%;
+    }
+
+    .text_button {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .main_button1 {
+        height: 43px;
+        width: 85%;
+    }
+
+    .main_button2 {
+        height: 43px;
+        width: 60%;
+    }
+}

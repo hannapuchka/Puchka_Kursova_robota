@@ -1,0 +1,170 @@
+﻿@page "/webdesign"
+@model WebApp.Pages.Webdesign.WebdesignModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-design</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Webdesign.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="header">
+        <div class="top_hamburger">
+            <a asp-page="../Mainpage/Mainpage"><img class="nav_hamburger_logo" src="~/src/logo.png"></a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div id="bar" class="top_menu">
+            <a asp-page="../Mainpage/Mainpage" class="top_menu_logo_link"><img class="nav_bar_logo" src="~/src/logo.png"></a>
+            <div class="dropdown_menu">
+                <ul class="nav_bar_text">
+                    <li><a asp-page="../Mainpage/Mainpage" class="nav_link">Головна</a></li>
+                    <li><a asp-page="../Webdesign/Webdesign" class="nav_link">Про web-дизайн</a></li>
+                    <li><a asp-page="../Principles/Principles" class="nav_link">Принципи та правила</a></li>
+                    <li><a asp-page="../Instruments/Instruments" class="nav_link">Інструменти та ресурси</a> </li>
+                    <li><a asp-page="../Trends/Trends" class="nav_link">Тренди web-дизайну</a></li>
+                    <li><a asp-page="../AboutUs/AboutUs" class="nav_link">Про нас</a></li>
+                    <li><a asp-page="../Profile/Profile" class="nav_link">Мій профіль</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container ">
+        <div class="title_with_text">
+            <div class="title">
+                <p class="text main_title_text main_title_text_first">
+                    Що таке
+                </p>
+                <p class="text main_title_text main_title_text_second style_1">
+                    web-дизайн
+                </p>
+            </div>
+            <div class="text_under_title">
+                <p class="text_regular">
+                    Веб-дизайн - це процес створення та вдосконалення зовнішнього вигляду веб-сайтів. Це мистецтво комбінує в собі елементи графічного дизайну,
+                    інтерфейсного дизайну та веб-розробки з метою створення естетично привабливих, функціональних та зручних для використання веб-сайтів.<br><br>
+
+                    Основна мета веб-дизайну полягає в тому, щоб створити такий дизайн веб-сайту, який би ефективно комунікував з відвідувачами, залучав їх увагу
+                    та стимулював до взаємодії з контентом. При цьому важливо враховувати як естетичні аспекти (такі як колір, форма, композиція), так
+                    і функціональність (легкість навігації, швидкість завантаження сторінок, адаптивність до різних пристроїв).
+                </p>
+            </div>
+        </div>
+        <p class="main_photo"><img class="photo1" src="~/src/Webdesign/img_p2.png"></p>
+
+        <div class="main_text">
+            <div class="subtitle">
+                <p class="text_subtitle">Основні складові веб-дизайну:</p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">1. Графічний дизайн</p>
+                <p class="text_regular">
+                    Це включає в себе створення естетично привабливих та функціональних елементів, таких як логотипи, іконки, зображення та колірні схеми.
+                    Графічний дизайн відображає бренд та ідентичність веб-сайту, роблячи його впізнаваним та запам'ятовуваним для користувачів.
+                </p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">2. Інтерфейсний дизайн</p>
+                <p class="text_regular">
+                    Це аспект веб-дизайну, що відповідає за організацію інформації та елементів на веб-сторінці. Він забезпечує логічну та інтуїтивно зрозумілу
+                    навігацію для користувачів, дозволяючи їм легко знаходити необхідну інформацію та взаємодіяти з веб-сайтом.
+                </p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">3. Веб-технології</p>
+                <p class="text_regular">
+                    Веб-дизайнери використовують різні технології, такі як HTML, CSS та JavaScript, для створення структури, вигляду та функціональності веб-сайтів.
+                    Вони також можуть використовувати різноманітні фреймворки та бібліотеки для полегшення розробки та вдосконалення функціональності.
+                </p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">4. Взаємодія з користувачем </p>
+                <p class="text_regular">
+                    Веб-дизайн спрямований на створення позитивного враження від користування веб-сайтом. Це включає в себе створення зручних форм, анімацій, відгуків
+                    на дії користувача та інших елементів, які сприяють активній взаємодії та залученню користувачів.
+                </p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">5. Адаптивний та мобільний дизайн </p>
+                <p class="text_regular">
+                    З урахуванням росту використання мобільних пристроїв, веб-дизайн також включає в себе розробку сайтів, які коректно відображаються на різних пристроях
+                    та розмірах екранів, забезпечуючи зручну та ефективну навігацію для користувачів на всіх пристроях.
+            </div>
+        </div>
+        <div class="main_buttons">
+            <div class="main_button1 button_color_style5">
+                <a asp-page="../Mainpage/Mainpage" class="text_button"> головна </a>
+            </div>
+            <div class="main_button2 button_color_style2">
+                <a asp-page="../Principles/Principles" class="text_button"> принципи та правила </a>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".top_menu");
+        const headMenu = document.querySelector(".header");
+        const navLink = document.querySelectorAll(".nav_link");
+
+        hamburger.addEventListener("click", mobileMenu);
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            headMenu.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            headMenu.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+        hamburger.addEventListener("click", toTopFunction);
+        function toTopFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            var pageWidth = document.documentElement.scrollWidth;
+            if (pageWidth > 1040) {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            else {
+                mybutton.style.display = "none";
+            }
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-200px";
+                closeMenu();
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+</html>

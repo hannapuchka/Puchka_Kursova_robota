@@ -1,0 +1,137 @@
+﻿@page "/registration"
+@model WebApp.Pages.Registration.RegisterModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Registration.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="header">
+        <div class="top_hamburger">
+            <a asp-page="../Mainpage/Mainpage">
+                <img class="nav_hamburger_logo" src="~/src/logo.png">
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div id="bar" class="top_menu">
+            <a asp-page="../Mainpage/Mainpage" class="top_menu_logo_link">
+                <img class="nav_bar_logo" src="~/src/logo.png">
+            </a>
+            <div class="dropdown_menu">
+                <ul class="nav_bar_text">
+                    <li><a asp-page="../Mainpage/Mainpage" class="nav_link">Головна</a></li>
+                    <li><a asp-page="../Webdesign/Webdesign" class="nav_link">Про web-дизайн</a></li>
+                    <li><a asp-page="../Principles/Principles" class="nav_link">Принципи та правила</a></li>
+                    <li><a asp-page="../Instruments/Instruments" class="nav_link">Інструменти та ресурси</a> </li>
+                    <li><a asp-page="../Trends/Trends" class="nav_link">Тренди web-дизайну</a></li>
+                    <li><a asp-page="../AboutUs/AboutUs" class="nav_link">Про нас</a></li>
+                    <li><a asp-page="../Profile/Profile" class="nav_link">Мій профіль</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="title_with_text">
+                <div class="title">
+                    <p class="text main_title_text main_title_text_first">
+                        Будь ласка, зареєструйтесь
+                    </p>
+                </div>
+                <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="input_form">
+                    <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                    <div class="input_field_with_text">
+                        <p class="text_regular low_color">Ваше ім’я</p>
+                        <input asp-for="Input.UserName" class="text_regular input_field" type="text" />
+                        <span asp-validation-for="Input.UserName" class="text-danger"></span>
+                    </div>
+                    <div class="input_field_with_text">
+                        <p class="text_regular low_color">Ваша електронна пошта</p>
+                        <input asp-for="Input.Email" class="text_regular input_field" type="email" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+                    <div class="input_field_with_text">
+                        <p class="text_regular low_color">Ваш пароль</p>
+                        <input asp-for="Input.Password" class="text_regular input_field" type="password" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+                    <div class="main_buttons">
+                        <button type="submit" class="main_button1 button_color_style2 text_button">Зареєструватися</button>
+                        <a asp-page="../Mainpage/Mainpage" class="main_button2 button_color_style5 text_button">Головна</a>
+                    </div>
+                </form>
+        </div>
+        <p class="main_photo">
+            <img class="photo1" src="~/src//Registration//img_reg.png">
+        </p>
+       
+    </main>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".top_menu");
+        const headMenu = document.querySelector(".header");
+        const navLink = document.querySelectorAll(".nav_link");
+
+        hamburger.addEventListener("click", mobileMenu);
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            headMenu.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            headMenu.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+        hamburger.addEventListener("click", toTopFunction);
+        function toTopFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            var pageWidth = document.documentElement.scrollWidth;
+            if (pageWidth > 1040) {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            else {
+                mybutton.style.display = "none";
+            }
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-200px";
+                closeMenu();
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+</html>

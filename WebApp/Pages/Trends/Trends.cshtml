@@ -1,0 +1,182 @@
+﻿@page "/Trends"
+@model WebApp.Pages.Trends.TrendsModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trends</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Trends.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="header">
+        <div class="top_hamburger">
+            <a asp-page="../Mainpage/Mainpage"><img class="nav_hamburger_logo" src="~/src/logo.png"></a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div id="bar" class="top_menu">
+            <a asp-page="../Mainpage/Mainpage" class="top_menu_logo_link"><img class="nav_bar_logo" src="~/src/logo.png"></a>
+            <div class="dropdown_menu">
+                <ul class="nav_bar_text">
+                    <li><a asp-page="../Mainpage/Mainpage" class="nav_link">Головна</a></li>
+                    <li><a asp-page="../Webdesign/Webdesign" class="nav_link">Про web-дизайн</a></li>
+                    <li><a asp-page="../Principles/Principles" class="nav_link">Принципи та правила</a></li>
+                    <li><a asp-page="../Instruments/Instruments" class="nav_link">Інструменти та ресурси</a> </li>
+                    <li><a asp-page="../Trends/Trends" class="nav_link">Тренди web-дизайну</a></li>
+                    <li><a asp-page="../AboutUs/AboutUs" class="nav_link">Про нас</a></li>
+                    <li><a asp-page="../Profile/Profile" class="nav_link">Мій профіль</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container ">
+        <div class="title_with_text">
+            <div class="title">
+                <p class="text main_title_text main_title_text_first">
+                    Тренди
+                </p>
+                <p class="text main_title_text main_title_text_second style_4">
+                    web-дизайну
+                </p>
+            </div>
+            <div class="text_under_title">
+                <p class="text_regular">
+                    Від якості дизайну залежить успіх всього сайту. Тому дуже важливо стежити за трендом, розуміти, які інструменти увійшли в моду у сфері сайтобудування,
+                    а які вже вважаються застарілими та залишаються позаду.<br><br>
+
+                    До речі, тренди у веб-дизайні постійно змінюються, удосконалюються, модернізуються. Те, що було актуально у 2021-2022 роках зменшує свої оберти,
+                    поступаючись абсолютно новим фішкам. І дизайнеру або сучасному підприємцю необхідно знати про них, щоб результат розробки сайтів був не просто ефективним,
+                    а створював правильне враження про компанію, якій належить веб-ресурс.<br><br>
+
+                    Крім того, варто відзначити, що веб-дизайн не лише про естетику та функціональність, але й про створення емоційного зв'язку з відвідувачами.
+                    Успішний веб-дизайн може викликати певні почуття та асоціації, які підсилюють брендову ідентичність та покращують сприйняття продукту чи послуги.
+                </p>
+            </div>
+        </div>
+
+        <p class="main_photo"><img class="photo1" src="~/src/Trends/img_p5.png"></p>
+
+        <div class="main_text">
+            <div class="subtitle">
+                <p class="text_subtitle">Основні тренди 2024 року:</p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">1. Контрастна типографія</p>
+                <p class="text_regular">
+                    Саме робота з типографією грає надважливу роль - як і в функціональній складовій сайту, так і у візуальній.
+                    Трендом 2024 року є контрастні за розміром типографічні рішення, а також масивна типографія на сайті.
+                </p>
+                <img class="photo2" src="~/src/Trends/img_p5_2.png">
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">2. Бенто-дизайн(блочний дизайн)</p>
+                <p class="text_regular">
+                    Інформація, котра розміщена просто і в окремих блоках - мастхев веб-дизайну в 2024 році.
+                    Сьогодні так багато інформації, а відсікаючи все лишнє і даючи контент порціями, користувач отримає задоволення.
+                </p>
+                <img class="photo2" src="~/src/Trends/img_p5_3.png">
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">3. Цікаві градієнти</p>
+                <p class="text_regular">
+                    Градієнт вже досить поширений прийом, але тепер він набуває іншої філософії.
+                    Цьому сприяє Apple. Складні та цікаві градієнти надають нової вимірності дизайну, глибини сенсів та динаміки.
+                    Через цей прийом можна абстрактно впроваджувати будь-які емоції, при цьому дизайн залишиться чистим та мінімалістичним.
+                </p>
+                <img class="photo2" src="~/src/Trends/img_p5_4.png">
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">4. Клейморфізм</p>
+                <p class="text_regular">
+                    Стиль, котрий йде він неоморфізму. Все ті самі яскраві гами, закруглені кути, світло та тінь. Але тут більше
+                    історія про надутість та ефект 3D. Також вагомий вплива на цей стиль несе технологія AR.
+                </p>
+                <img class="photo2" src="~/src/Trends/img_p5_5.png">
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">5. Інтерактивні сайти</p>
+                <p class="text_regular">
+                    Все частіше люди залишають сайт, якщо він дуже простий. Впровадження в такий проєкт різних WOW-технологій чудово відображатиметься,
+                    наприклад: 3D, інтерактив, відео, анімації. Ціль такого сайту — утримання аудиторії за допомогою інтерактивності. Цей інструмент
+                    збільшить показники сайту через кліки, скролінг і тд. Відповідно це збільшуватиме загальну результативність сайту.
+                </p>
+                <img class="photo2" src="~/src/Trends/img_p5_6.png">
+            </div>
+        </div>
+        <div class="main_buttons">
+            <div class="main_button1 button_color_style5">
+                <a asp-page="../Instruments/Instruments" class="text_button">інструменти та ресурси</a>
+            </div>
+            <div class="main_button2 button_color_style2">
+                <a asp-page="../AboutUs/AboutUs" class="text_button">про нас</a>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".top_menu");
+        const headMenu = document.querySelector(".header");
+        const navLink = document.querySelectorAll(".nav_link");
+
+        hamburger.addEventListener("click", mobileMenu);
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            headMenu.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            headMenu.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+        hamburger.addEventListener("click", toTopFunction);
+        function toTopFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            var pageWidth = document.documentElement.scrollWidth;
+            if (pageWidth > 1040) {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            else {
+                mybutton.style.display = "none";
+            }
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-200px";
+                closeMenu();
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+</html>

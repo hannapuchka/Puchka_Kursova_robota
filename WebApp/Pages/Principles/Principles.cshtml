@@ -1,0 +1,215 @@
+﻿@page "/principles"
+@model WebApp.Pages.Principles.PrinciplesModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principles</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Principles.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="header">
+        <div class="top_hamburger">
+            <a asp-page="../Mainpage/Mainpage"><img class="nav_hamburger_logo" src="~/src/logo.png"></a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div id="bar" class="top_menu">
+            <a asp-page="../Mainpage/Mainpage" class="top_menu_logo_link"><img class="nav_bar_logo" src="~/src/logo.png"></a>
+            <div class="dropdown_menu">
+                <ul class="nav_bar_text">
+                    <li><a asp-page="../Mainpage/Mainpage" class="nav_link">Головна</a></li>
+                    <li><a asp-page="../Webdesign/Webdesign" class="nav_link">Про web-дизайн</a></li>
+                    <li><a asp-page="../Principles/Principles" class="nav_link">Принципи та правила</a></li>
+                    <li><a asp-page="../Instruments/Instruments" class="nav_link">Інструменти та ресурси</a> </li>
+                    <li><a asp-page="../Trends/Trends" class="nav_link">Тренди web-дизайну</a></li>
+                    <li><a asp-page="../AboutUs/AboutUs" class="nav_link">Про нас</a></li>
+                    <li><a asp-page="../Profile/Profile" class="nav_link">Мій профіль</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container ">
+        <div class="title_with_text">
+            <div class="title">
+                <p class="text main_title_text main_title_text_first">
+                    Принципи
+                </p>
+                <p class="text main_title_text main_title_text_second style_2">
+                    та правила
+                </p>
+            </div>
+            <div class="text_under_title">
+                <p class="text_regular">
+                    Дизайн веб-сайту повинен одночасно вирішувати два завдання: одразу повідомляти відвідувача про мету сайту,
+                    а також підтримувати інтерес відвідувача до сайту. Послідовність, кольори, шрифти, зображення, простота та
+                    функціональність – все це елементи, які сприяють ефективному та ефектному дизайну веб-сайту.<br><br>
+
+                    Під час розробки веб-сайту кілька важливих аспектів сприяють його майбутньому успіху. Добре спроектований веб-сайт,
+                    наприклад, може допомогти встановити довіру та спонукати відвідувачів до дії. Створення фантастичного досвіду користувача тягне
+                    за собою оптимізацію дизайну вашого веб-сайту з точки зору зручності використання (форма та естетика) і простоти використання (функціональність).
+                </p>
+            </div>
+        </div>
+        <p class="main_photo"><img class="photo1" src="~/src/Principles/img_p3.png"></p>
+
+        <div class="main_text">
+            <div class="subtitle">
+                <p class="text_subtitle">Основні принципи веб-дизайну:</p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">1. Призначення сайту</p>
+                <p class="text_regular">
+                    Ваш сайт повинен відповідати вимогам відвідувачів. Наявність чіткої мети на всіх сторінках допоможе користувачеві зручно
+                    та ефективно взаємодіяти з тим, що ви йому пропонуєте. Яка мета вашого веб-сайту? Чи є Ваш сайт практичним посібником, на кшталт посібників
+                    «Як зробити щось»? Це розважальний сайт, такий як спортивні новини, або ви намагаєтеся щось продати відвідувачам?
+                </p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">2. Простота</p>
+                <p class="text_regular">
+                    Коли справа доходить до досвіду користувача і зручності використання веб-сайту, простота - це ключ. Дотримуйтесь цих методів
+                    для досягнення простоти дизайну.<br><br>
+
+                    Колір може посилати повідомлення та викликати емоційні реакції. Вибір палітри кольорів, яка відповідає вашому
+                    бізнесу, дозволить вам вплинути на поведінку вашого споживача по відношенню до вашого сайту та продукту або послуги. Бажано обирати до п'яти кольорів.
+                    Приємні поєднання кольорів покращують взаємодію з клієнтами і покращують їх самопочуття. <br><br>
+
+                    Типографіка — невід'ємний елемент будь-якого веб-сайту. Вона привертає увагу та виконує функцію візуального представлення голосу вашого бренду,
+                    компанії, продукту. На веб-сайті шрифти мають бути добре читабельними. Дотримуйтесь обмежень максимум трьох різних шрифтів. <br><br>
+
+                    Кожен візуальний аспект, який використовується в комунікації з користувачем, називається образом. Сюди входять фотографії, ілюстрації,
+                    відео та різна графіка. Всі зображення повинні бути емоційними та передавати дух та індивідуальність вашого бренду. Більшість інформації,
+                    яку ми отримуємо на веб-сайтах, є візуальною, тому всі фотографії на сайті мають бути з високою
+                    роздільною здатністю для створення у відвідувачів першого враження про професіоналізм та надійність вашої компанії та продукту чи послуги.
+                </p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">3. Навігація</p>
+                <p class="text_regular">
+                    Техніка пошуку в Інтернеті, відома як навігація, використовується людьми, коли вони взаємодіють із сайтом і легко чи не дуже
+                    знаходять на ньому те, що шукали.<br><br>
+
+                    Дуже важливо, щоб відвідувачі були залучені. Відвідувачі залишать ваш сайт, якщо навігація буде складною та
+                    незручною. Проста, інтуїтивно зрозуміла та уніфікована посторінкова навігація часто відіграє вирішальну роль.
+                </p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2 subtitle2">4. F-образне читання</p>
+                <p class="text_regular">
+                    Найчастіший шаблон, який відвідувачі використовують для сканування тексту на веб-сайті, — це шаблон за літерою F. Згідно з
+                    дослідженнями відстеження погляду відвідувачів сайту, більшість того, що люди бачать, відбувається у верхній та лівій частинах екрана. Подібно
+                    до нашого природного стилю читання на Заході (зліва направо та зверху вниз), F-подібний малюнок на сайті призначений для імітації природного руху людського погляду.
+                </p>
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">5. Візуальна ієрархія</p>
+                <p class="text_regular">
+                    Візуальний дизайн – це розташування елементів за ступенем важливості. Розмір, колір, зображення, контраст, шрифт,
+                    пробіли, текстура та стиль – все це використовується для створення візуальної ієрархії. Найважливіша мета візуальної шкали – встановити фокус;
+                    він надсилає відвідувачів до важливого контенту на сайті.
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">6. Зміст</p>
+                <p class="text_regular">
+                    Гарний веб-сайт має відмінний дизайн і відмінний контент. Конверсії можна досягти,
+                    використовуючи привабливу мову та відмінний матеріал для залучення та переконання клієнтів.
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">7. Використовуйте сітки</p>
+                <p class="text_regular">
+                    Сітки допомагають в організації вашого дизайну та керуванні вашими даними.
+                    Сітка допомагає вирівнювати компоненти на сторінці та підтримувати її порядок. Дизайн на основі сітки організує матеріал в акуратну, жорстку
+                    сітчасту структуру з колонками та розділами, які вишиковуються в лінію та виглядають збалансованими, що призводить до естетично привабливого веб-сайту.
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">8. Візуальна ієрархія</p>
+                <p class="text_regular">
+                    Довге очікування завантаження веб-сайту призведе до того, що користувачі покинуть сайт. Майже половина всіх відвідувачів веб-сайтів
+                    очікують, що сайт завантажиться за 2 секунди або менше, і вони залишають сайт, який не завантажиться протягом 3 секунд. Оптимізація розмірів зображення може
+                    допомогти вам швидше завантажити ваш сайт.
+            </div>
+            <div class="block_text">
+                <p class="text_subtitle2 subtitle2">9. Адаптація під мобільні пристрої</p>
+                <p class="text_regular">
+                    Дедалі більше людей переглядають веб-сторінки зі своїх телефонів чи інших мобільних гаджетів. Надзвичайно важливо мати
+                    адаптивний дизайн для вашого веб-сайту під різні дисплеї.
+            </div>
+        </div>
+        <div class="main_buttons">
+            <div class="main_button1 button_color_style5">
+                <a asp-page="../Webdesign/Webdesign" class="text_button"> що таке web-дизайн </a>
+            </div>
+            <div class="main_button2 button_color_style2">
+                <a asp-page="../Instruments/Instruments" class="text_button"> інструменти та ресурси </a>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".top_menu");
+        const headMenu = document.querySelector(".header");
+        const navLink = document.querySelectorAll(".nav_link");
+
+        hamburger.addEventListener("click", mobileMenu);
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            headMenu.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            headMenu.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+        hamburger.addEventListener("click", toTopFunction);
+        function toTopFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            var pageWidth = document.documentElement.scrollWidth;
+            if (pageWidth > 1040) {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            else {
+                mybutton.style.display = "none";
+            }
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-200px";
+                closeMenu();
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+</html>

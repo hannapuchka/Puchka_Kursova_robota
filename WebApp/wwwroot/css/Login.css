@@ -1,0 +1,275 @@
+﻿*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* MAIN PAGE*/
+
+.container {
+    margin-top: 79px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 100px;
+}
+
+.title_with_text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main_photo {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+
+.photo1 {
+    width: 830px;
+}
+
+.main_text {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding-right: 19%;
+    padding-bottom: 30px;
+}
+
+.block_text {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding-bottom: 30px;
+}
+
+.text_subtitle {
+    padding-bottom: 5px;
+}
+
+.main_buttons {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px 30px
+}
+
+.main_button1 {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    height: 94px;
+    width: 427px;
+}
+
+.main_button2 {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    height: 94px;
+    width: 270px;
+}
+
+.text_button {
+    color: var(--text_color, #333);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: lowercase;
+    background: none;
+    border: none;
+}
+
+.social_links {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 26px 94px;
+    padding-bottom: 120px;
+}
+
+.input_form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px 28px;
+    padding-bottom: 211px;
+}
+
+.input_field_with_text {
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    gap: 13px 13px;
+}
+
+.icon_link {
+    width: 74px;
+}
+
+.input_field {
+    width: 100%;
+    height: 71px;
+    padding-left: 24px;
+}
+
+.block_links_with_subtitle {
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .photo2 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1744px) and (min-width: 1041px) {
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        align-self: center;
+    }
+
+    .container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title_with_buttons {
+        align-items: center;
+    }
+
+    .social_links {
+        flex-direction: column;
+        justify-content: left;
+    }
+}
+
+@media (max-width: 1040px) {
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_title_text {
+        font-family: var(--main_text_font);
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 900;
+    }
+
+    .input_field {
+        width: 85%;
+        height: 47px;
+    }
+
+    .input_form {
+        padding-bottom: 51px;
+    }
+
+    .text {
+        align-self: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title_with_buttons {
+        align-items: center;
+    }
+
+    .main_text {
+        flex: auto;
+    }
+
+    .photo1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        align-self: center;
+    }
+
+    .main_title_text {
+        font-family: var(--main_text_font);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title_with_buttons {
+        align-items: center;
+    }
+
+    .main_photo {
+        padding-top: 0%;
+        padding-left: 0%;
+        justify-content: center;
+        width: 80%;
+        height: 80%;
+    }
+
+    .photo1 {
+        width: 100%;
+    }
+
+    .photo2 {
+        width: 100%;
+    }
+
+    .text_button {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .main_button2 {
+        height: 43px;
+        width: 30%;
+    }
+    .main_button1 {
+        height: 43px;
+        width: 60%;
+    }
+    .input_field {
+        padding-left: 16px;
+    }
+    .main_buttons {
+        flex-direction: column;
+    }
+    .alert-danger{
+        font-size:12px
+    }
+}
